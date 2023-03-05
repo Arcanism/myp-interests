@@ -1,0 +1,201 @@
+        * {font-family: Arial, Helvetica, sans-serif;}
+        * {
+            color: #ffffff;
+        }
+        .homebg {
+            border-image-slice: 1;
+            background-image: linear-gradient(to bottom, #000000, #AA0000, #AA5500, #AAAA00, #00AA00, #00AAAA); 
+        }
+        .sportsbg {
+            border-image-slice: 1;
+            background-image: linear-gradient(to bottom, #000000, #FF0000); 
+            background-repeat: no-repeat;
+            position: relative;
+            
+        }
+        .booksbg {
+            border-image-slice: 1;
+            background-image: linear-gradient(to bottom, #000000, #FF8800); 
+            background-repeat: no-repeat;
+            position: relative;
+            
+        }
+        .musicbg {
+            border-image-slice: 1;
+            background-image: linear-gradient(to bottom, #000000, #FFFF00); 
+            background-repeat: no-repeat;
+            position: relative;
+            
+        }
+        .gamingbg {
+            border-image-slice: 1;
+            background-image: linear-gradient(to bottom, #000000, #00FF00); 
+            background-repeat: no-repeat;
+            position: relative;
+            
+        }
+        .techbg {
+            border-image-slice: 1;
+            background-image: linear-gradient(to bottom, #000000, #00FFFF); 
+            background-repeat: no-repeat;
+            position: relative;
+            
+        }
+        .chat {
+            position: relative;
+            width: 95vw;
+        }
+
+        .navbar {
+            background-color: #000000;
+            border: none;
+            color: #ffffff;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            height: 10vh;
+            width: 100vw;
+            align-items: center;
+            display: inline-block;
+        }
+        .nav {
+            background-color: #000000;
+            border-color: white;
+            color: #ffffff;
+            position: fixed;
+            border-style: solid;
+            border-width: 3px;
+        }
+        
+        .nav.home {
+            border-image: linear-gradient(to right, #000000, #000000, #000000, #ff0000); 
+            border-image-slice: 1;
+        }
+        .nav.sports {
+            border-image: linear-gradient(to right, #ff0000, #ff0000, #ff0000, #ff8800); 
+            border-image-slice: 1;
+        }
+        .nav.books {
+            border-image: linear-gradient(to right, #ff8800, #ff8800, #ff8800, #ffff00); 
+            border-image-slice: 1;
+        }
+        .nav.music {
+            border-image: linear-gradient(to right, #ffff00, #ffff00, #ffff00, #00ff00); 
+            border-image-slice: 1;
+        }
+        .nav.gaming {
+            border-image: linear-gradient(to right, #00ff00, #00ff00, #00ff00, #00ffff); 
+            border-image-slice: 1;
+        }
+        .nav.tech {
+            border-image: linear-gradient(to right, #00ffff, #00ffff, #00ffff, #000000); 
+            border-image-slice: 1;
+        }
+        
+        .nav:hover {
+            background-color: #333333;
+        }
+        .title {
+            position: relative;
+            font-size: 5em;
+        }
+        .content {
+            position: absolute;
+            top: 10vh;
+            left: 0vw;
+            height: 90vh;
+            width: 100vw;
+        }
+        .page {
+            position: absolute;
+            top: 0vh;
+            left: 0vw;
+            height: 90vh;
+            width: 100vw;
+            border: none;
+        }
+        .footer {
+            position: absolute;
+            background-color: #000000;
+            color: #ffffff;
+            width: 100vw;
+            top: 100vh;
+            left: 0vw;
+        }
+
+        .section {
+            position: relative;
+            left: 5vw;
+            width: 90vw;
+            top: 3vh;
+        }
+        .image {
+            position: absolute;
+        }
+        .text {
+            position: absolute;
+        }
+        .heading {
+            font-size: 2em;
+        }
+
+        @media only screen and (orientation: landscape) {
+            .nav {
+                width: 10vw;
+                height: 10vh;
+            }
+            .nav.home {left: 20vw;}
+            .nav.sports {left: 30vw;}
+            .nav.books {left: 40vw;}
+            .nav.music {left: 50vw;}
+            .nav.gaming {left: 60vw;}
+            .nav.tech {left: 70vw;}
+            .footer {height: 30vh;}
+            .section {height: 60vh;}
+            .image {max-width: 30vw;}
+            .text {left: 32vw;}
+            .chat {height: calc(220vh - 40vw);}
+            .chatbox {
+                position: absolute; 
+                height: 90vh; 
+                width: 60vw;
+                left: 0vw
+            }
+            .guide {
+                position: absolute;
+                height: 90vh;
+                width: 30vw;
+                left: 65vw;
+            }
+        }
+        @media only screen and (orientation: portrait) {
+            .nav {
+            width: 17vw;
+            height: 10vh;
+            }
+            .nav.home {left: 0vw;}
+            .nav.sports {left: 17vw;}
+            .nav.books {left: 34vw;}
+            .nav.music {left: 51vw;}
+            .nav.gaming {left: 68vw;}
+            .nav.tech {left: 85vw;}
+            .footer {height: 80vh;}
+            .section{height: 120vh;}
+            .image {position: relative; max-width: 90vw;}
+            .text {top: 5vh; position: relative;}
+            .chat {height: 250vh;}
+            .chatbox {
+                position: relative; 
+                height: 80vh; 
+                width: 85vw;
+                left: 5vw;
+            }
+            .guide {
+                position: relative;
+                height: 150vh;
+                width: 85vw;
+                top: 5vw;
+                left: 5vw;
+            }
+        }
+
